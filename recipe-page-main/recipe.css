@@ -1,0 +1,148 @@
+@font-face {
+	font-family: "Outfit", serif;
+	src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff5fa;
+	min-height: 240vh;
+	display: flex;
+}
+
+.main-container {
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	width: 50vw;
+	min-width: 375px;
+	margin: auto;
+	border-radius: 1em;
+}
+main {
+	width: 45vw;
+	min-width: 300px;
+	margin: auto;
+	background-color: #ffffff;
+	color: #5f574e;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.omelette {
+	width: 100%;
+	margin: auto;
+	border-radius: 0.5em;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+.prep-time {
+	background-color: #fff5fa;
+	border-radius: 0.8em;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.prep-time h3 {
+	color: #7b284f;
+	padding: 1em 1em 1em ;
+}
+.prep-time ul {
+	list-style-position: inside;
+	padding: 0 0 1.2em 2em;
+}
+
+.prep-time ::marker  {
+	color: #7b284f;
+
+	
+}
+ li {
+	margin-bottom: 0.5em;
+	
+}
+ 
+h2  {
+	font-size: 1.5rem;
+	color: #854632;
+	font-weight: 600;
+	padding-bottom: 1em;
+}
+
+.ingredient ul {
+	list-style-position: inside;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+ ol {
+	list-style: none;
+	counter-reset: none;
+	padding-left: 0.5em;
+		padding-bottom: 1em;
+}
+
+ol li {
+	counter-increment: list;
+	padding-left: 2em;
+	position: relative;
+}
+ol li::before {
+	content: counter(list) ".";
+	font-weight: bold;
+	position: absolute;
+	left: 0 ;
+	color: #854632;
+}
+
+.instruction h2 {
+	margin-top: 0.8em;
+}
+ table {
+	border-collapse: collapse;
+	width: 100%;
+ }
+
+td, th {
+	border: 1px solid #ddd;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom: none;
+	padding: 0.5em;
+ }
+
+.nutrition h2 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+ }
+ .nutrition p {
+		padding-bottom: 1em;
+
+ }
+
+ th {
+	color: #854632;
+ }
+
+@media (max-width: 400px) {
+	main	{
+		width: 300px;
+	}
+	.main-container {
+		width: 400px;
+	}
+
+}
